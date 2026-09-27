@@ -1,25 +1,42 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: boarder-box;
 }
 
 html, body{
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    font-size: 0.85rem;
 }
 
 .header{
-    height: 25%;
+    height: 18vh;
     color: rgb(10, 2, 46);
     display:flex;
     align-items: center;
     justify-content: center;
     margin-left: 4rem;
+    padding: 10px 0;
+}
+p{
+    margin-bottom: 4px;
+}
+h2, h3{
+    margin: 4px 0;
+}
+ul{
+    padding-left: 1.2rem;
+    margin: 2px 0;
+}
+hr{
+    margin: 4px 0;
+    border-top: 1px solid #ddd;
 }
 #img_holder{
-    width: 150px;
-    height: 150px;
-    margin-top: 0.5rem;
+    width: 120px;
+    height: 120px;
+    margin-top: 0.6rem;
     border-radius: 50%;
     border: 7px solid rgb(0, 0, 54);
     background-color: rgb(3, 88, 163);
@@ -35,7 +52,7 @@ html, body{
     object-position: center top;
 }
 .content{
-    height: 7rem;
+    height: 5rem;
     width: 70%;
     position:relative;
     z-index: 1;
@@ -46,21 +63,15 @@ html, body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: white;
 }
-
-#tagline{
-    font-size:medium;
-}
-#img_holder{
-    border-radius: 50%;
-}
-
 .maincontent{
-    height: 75%;
     display: flex;
     gap: 10px;
+    overflow: hidden
 }
 .left{
+    width: 25%;
     color: black;
     flex: 1;
     margin-left: 1rem;
@@ -69,4 +80,12 @@ html, body{
 }
 .right{
     width: 75%;
+}
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 0.85rem;
+  background-color: #f4f4f4; 
+  border-top: 1px solid #ccc;
 }
