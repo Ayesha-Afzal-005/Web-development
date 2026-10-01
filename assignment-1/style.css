@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html, body{
@@ -19,9 +20,10 @@ html, body{
     max-width: 850px;
     display:flex;
     align-items: center;
+    justify-content: center;
     color: white;
     background-color: #0358a3;
-    border-radius: 8px 8px 0;
+    border-radius: 8px 8px 0 0;
     padding: 12px 20px;
 }
 #img_holder{
@@ -69,17 +71,17 @@ hr{
     background-color: white;
     width: 100%;
     max-width: 850px;
-    /* border-left: 1px solid black;
-    border-right: 1px solid black; */
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
 }
 .left{
     width: 30%;
     background-color: #efeeee;
     padding: 15px;
-    border-right: 1px solid #e0e0e0;
+    border-right: 1px solid #ddd;
 }
 .right{
-    width: 75%;
+    width: 70%;
     padding: 15px 20px;
 }
 section, article{
@@ -114,6 +116,27 @@ a{
 }
 a:hover{
     text-decoration: underline;
+}
+.item{
+    margin-bottom: 8px;
+}
+.item-header{
+    display :flex;
+    justify-content: space-between;
+    align-item: baseline;
+}
+.date {
+    font-size: 11.5px;
+    color: #666;
+}
+.tech{
+    font-size: 11px;
+    font-weight: bold;
+    color: #0358a3;
+    margin-top: 2px;
+}
+.education-item p{
+    font-size: 12px
 }
 .footer {
   width: 100%;
