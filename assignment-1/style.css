@@ -21,7 +21,7 @@ html, body{
     align-items: center;
     color: white;
     background-color: #0358a3;
-    border-radius: 8px 8px;
+    border-radius: 8px 8px 0;
     padding: 12px 20px;
 }
 #img_holder{
@@ -82,6 +82,39 @@ hr{
     width: 75%;
     padding: 15px 20px;
 }
+section, article{
+    margin-bottom: 12px;
+}
+h2{
+    font-size: 13.5px;
+    color: #0358a3;
+    border-bottom: 2px solid #0358a3;
+    padding-bottom: 2px;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+h3{
+    font-size: 13px;
+    color: #111;
+}
+p{
+    line-height: 1.35;
+    color: #444;
+}
+ul{
+    padding-left: 1rem;
+}
+li{
+    margin-bottom: 3px;
+}
+a{
+   color: #0358a3;
+   text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
 .footer {
   width: 100%;
   max-width: 850px;
@@ -91,4 +124,5 @@ hr{
   color: #666;
   background-color: #e9ecef; 
   border-top: 1px solid #ddd;
+  border-radius: 0 0 8px 8px;
 }     
