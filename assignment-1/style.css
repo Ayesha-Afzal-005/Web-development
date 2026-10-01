@@ -53,41 +53,42 @@ hr{
     border-top: 1px solid #ddd;
 }
 
-.header-txt{
-    height: 5rem;
-    width: 70%;
-    position:relative;
-    z-index: 1;
-    margin-left: -50px;
-    flex-grow: 1;
-    background-color: rgb(3, 88, 163);
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: white;
+.header-txt h1{
+    margin-left: 0.3rem;
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+#tagline{
+    font-size: 0.85rem;
+    font-style: italic;
+    margin-left: 0.3rem;
+    color: #d1e5ff;
 }
 .maincontent{
     display: flex;
-    gap: 10px;
-    overflow: hidden
+    background-color: white;
+    width: 100%;
+    max-width: 850px;
+    /* border-left: 1px solid black;
+    border-right: 1px solid black; */
 }
 .left{
-    width: 25%;
-    color: black;
-    flex: 1;
-    margin-left: 1rem;
-    padding-right: 0.5rem;
-    border-right: 2px solid rgb(126, 126, 126);
+    width: 30%;
+    background-color: #efeeee;
+    padding: 15px;
+    border-right: 1px solid #e0e0e0;
 }
 .right{
     width: 75%;
+    padding: 15px 20px;
 }
-footer {
+.footer {
   width: 100%;
+  max-width: 850px;
   text-align: center;
-  padding: 6px 0;
+  padding: 8px 0;
   font-size: 0.85rem;
-  background-color: #f4f4f4; 
-  border-top: 1px solid #ccc;
+  color: #666;
+  background-color: #e9ecef; 
+  border-top: 1px solid #ddd;
 }     
