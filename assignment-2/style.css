@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+/* Center logo ONLY on mobile/tablet screens */
+@media (max-width: 991.98px) {
+  .mobile-center-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* On desktop, keep logo static on the left */
+@media (min-width: 992px) {
+  .mobile-center-logo {
+    position: static;
+    transform: none;
+  }
+}
