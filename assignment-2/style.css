@@ -7,19 +7,11 @@ html, body{
     height: 100%;
     width: 100%;
 }
-/* Center logo ONLY on mobile/tablet screens */
-@media (max-width: 991.98px) {
-  .mobile-center-logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
+.hero-container{
+  position: relative;
+  width: 100%;
+  min-height: 90vh;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6)),
+              url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=1600');
 }
-
-/* On desktop, keep logo static on the left */
-@media (min-width: 992px) {
-  .mobile-center-logo {
-    position: static;
-    transform: none;
-  }
-}
+  
