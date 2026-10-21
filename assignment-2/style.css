@@ -15,6 +15,7 @@ html, body{
   display: flex;
   align-items: center;
   overflow: hidden;
+  padding-top: 100px;
 }
 .hero-image{
   position: absolute;
@@ -39,45 +40,34 @@ html, body{
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
-  width: 95%;
+  width: 92%;
   max-width: 1300px;
   z-index: 1000;
 
-  background: rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.2);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-  border: 1px solid rgba(255,255,255,0.25);
+  border: 1px solid rgba(255,255,255,0.3);
   border-radius: 50px;
   padding: 10px 25px;
   box-shadow: 0 8px 32px 0 rgba(0,0,0,0.2);
 }
 .zellbury-logo{
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 700;
   letter-spacing: 3px;
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
 }
-.zellbury-logo:hover {
-  color: #dddddd;
-}
 .toggler-icon-custom {
-      font-size: 1.5rem;
-      color: #ffffff;
-      cursor: pointer;
+  font-size: 1.6rem;
+  color: #ffffff ;
+  cursor: pointer;
+  display: block;
 }
 .hero-content {
-      margin-top: 80px;
-      color: #ffffff;
-      max-width: 550px;
+  position: relative;
+  color: #ffffff;
+  z-index: 3;
 }
-.tag-box {
-      background: rgba(0,0,0,0.4);
-      border: 1px solid rgba(255,255,255,0.2);
-      padding: 4px 12px;
-      font-size: 0.8rem;
-      letter-spacing: 1.5px;
-      display: inline-block;
-      margin-bottom: 15px;
-    }
