@@ -147,3 +147,54 @@ html, body{
   letter-spacing: 0.5px;
   text-transform:uppercase;
 }
+
+.pdp-main-layout {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.pdp-left-gallery {
+  flex: 0 0 60%;
+  max-width: 60%;
+}
+.pdp-right-details {
+  flex: 0 0 40%;
+  max-width: 40%;
+  position: sticky;
+  top: 90px;
+}
+.product-grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.gallery-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  display: block;
+}
+.size-btn {
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+@media (max-width: 991px) {
+  .pdp-main-layout {
+    flex-direction: column; /* Stacks vertically on tablet/mobile */
+  }
+
+  .pdp-left-gallery,
+  .pdp-right-details {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
