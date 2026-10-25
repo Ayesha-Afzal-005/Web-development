@@ -6,7 +6,9 @@
 
 html, body{
     height: 100%;
-    overflow-x: hidden;
+}
+body{
+  overflow-x: hidden;
 }
 .hero-container{
   position: relative;
@@ -54,6 +56,15 @@ html, body{
   padding: 10px 25px;
   box-shadow: 0 8px 32px 0 rgba(0,0,0,0.2);
 }
+body.bg-white .zellbury-header{
+    position: relative;
+    top: 0;
+    left: auto;
+    transform: none;
+    margin: 10px auto;
+    background: #fff;
+    border: 1px solid #ddd;
+}
 .zellbury-logo{
   font-size: 1.3rem;
   font-weight: 700;
@@ -64,7 +75,6 @@ html, body{
 }
 .toggler-icon-custom {
   font-size: 1.6rem;
-  color: #ffffff ;
   cursor: pointer;
   display: block;
 }
@@ -78,6 +88,7 @@ html, body{
   position: relative;  
   display: block;
   margin-top: 15px;  
+  transition: transform 0.25s ease;
 }
 .collection-card:hover,
 .collection-card:active,
@@ -102,9 +113,7 @@ html, body{
 }
 .card-image-wrapper {
   position: relative;
-  border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-  background-color: #f8f9fa;
   border-radius: 14px;
   overflow: hidden;
 }
@@ -178,20 +187,10 @@ html, body{
   object-fit: cover;
   display: block;
 }
-.size-btn {
-  width: 42px;
-  height: 42px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 6px;
-}
-
 @media (max-width: 991px) {
   .pdp-main-layout {
     flex-direction: column; /* Stacks vertically on tablet/mobile */
   }
-
   .pdp-left-gallery,
   .pdp-right-details {
     flex: 0 0 100%;
