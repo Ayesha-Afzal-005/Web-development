@@ -3,111 +3,212 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kurta Trouser - 1135 - ZELLBURY</title>
+    <title>ZELLBURY - Real Fashion, Real Prices - Best Online Fashion Store</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-white">
-    <header class="zellbury-header d-flex align-items-center justify-content-between">
-        <div class="d-flex align-items-center">
-            <button class="btn p-0 border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
-                <i class="bi bi-list toggler-icon-custom text-dark"></i>
-            </button>
-        </div>
-        <a href="#" class="zellbury-logo text-dark">
+<body>
+    <div class="hero-container">
+
+        <!-- NAVBAR: hamburger + logo + icons on all screen sizes (same as reference site) -->
+        <nav class="navbar zellbury-header d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+                <button class="btn p-0 border-0 text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-label="Toggle navigation">
+                    <i class="bi bi-list toggler-icon-custom"></i>
+                </button>
+            </div>
+            <a href="#" class="zellbury-logo navbar-brand">
             ZELLBURY
-        </a>
-        <div class="d-flex align-items-center gap-3 gap-md-4 text-white">
-            <a href="#" class="text-dark text-decoration-none fs-5"><i class="bi bi-search"></i></a>
-            <a href="#" class="text-dark text-decoration-none fs-5"><i class="bi bi-person"></i></a>
-            <a href="#" class="text-dark text-decoration-none fs-5 position-relative">
-            <i class="bi bi-bag"></i>
-            <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-black text-white" style="font-size: 0.55rem;">0</span>
             </a>
-        </div>
-    </header>
-        <!-- MAIN PRODUCT SECTION: FLEXBOX SIDE-BY-SIDE CONTAINER -->
-    <main class="container-fluid px-3 px-md-5 my-4">
-        <div class="pdp-main-layout">
-            
-            <!-- LEFT SIDE: 2-COLUMN IMAGE GRID GALLERY -->
-            <div class="pdp-left-gallery">
-                <div class="product-grid-gallery">
-                    <img src="//zellbury.com/cdn/shop/files/WPWQ121135_-_6.png?v=1792590385&amp;width=800" alt="Kurta Trouser View 1" class="gallery-img">
-                    <img src="//zellbury.com/cdn/shop/files/WPWQ121135_-_2.png?v=1792590387&amp;width=800" alt="Kurta Trouser View 2" class="gallery-img">
-                    <img src="//zellbury.com/cdn/shop/files/WPWQ121135_-_5.png?v=1792590388&amp;width=800" alt="Kurta Trouser View 3" class="gallery-img">
-                    <img src="//zellbury.com/cdn/shop/files/WPWQ121135_-_3.png?v=1792590384&amp;width=800" alt="Kurta Trouser View 4" class="gallery-img">
+            <div class="offcanvas offcanvas-start bg-black text-white" tabindex="-1" id="mobileMenu">
+                <div class="offcanvas-header border-bottom border-secondary">
+                    <h5 class="offcanvas-title zellbury-logo fs-5">ZELLBURY</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav flex-column gap-3 fs-5">
+                        <li class="nav-item"><a class="nav-link text-white" href="#">NEW ARRIVALS</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#">UNSTITCHED</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#">READY TO WEAR</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#">WESTERN</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#">MEN</a></li>
+                    </ul>
                 </div>
             </div>
+            <div class="d-flex align-items-center gap-3 gap-md-4 text-white">
+                <a href="#" class="text-white text-decoration-none fs-5"><i class="bi bi-search"></i></a>
+                <a href="#" class="text-white text-decoration-none fs-5"><i class="bi bi-person"></i></a>
+                <a href="#" class="text-white text-decoration-none fs-5 position-relative">
+                <i class="bi bi-bag"></i>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-white text-dark" style="font-size: 0.55rem;">0</span>
+                </a>
+            </div>
+        </nav>
 
-            <!-- RIGHT SIDE: PRODUCT DETAILS PANE -->
-            <div class="pdp-right-details">
-                <div class="product-details-pane">
-                    
-                    <!-- Title & Price -->
-                    <div class="d-flex justify-content-between align-items-center mb-3">
-                        <h1 class="h4 fw-bold text-dark mb-0">Kurta Trouser - 1135</h1>
-                        <span class="h4 fw-bold text-dark mb-0">Rs.3,390</span>
-                    </div>
-
-                    <!-- Category Tags -->
-                    <div class="d-flex flex-wrap gap-2 mb-3">
-                        <span class="badge bg-light text-secondary border fw-normal px-2.5 py-1.5 rounded-2">Viscose</span>
-                        <span class="badge bg-light text-secondary border fw-normal px-2.5 py-1.5 rounded-2">Printed</span>
-                        <span class="badge bg-light text-secondary border fw-normal px-2.5 py-1.5 rounded-2">2 Piece</span>
-                        <span class="badge bg-light text-secondary border fw-normal px-2.5 py-1.5 rounded-2">Kurta Trouser</span>
-                    </div>
-
-                    <!-- Size Selection -->
-                    <div class="d-flex justify-content-between align-items-center mb-2">
-                        <span class="fw-bold small text-dark">Size:</span>
-                        <a href="#" class="small text-dark text-decoration-underline">Size Chart & Guide</a>
-                    </div>
-                    <div class="d-flex gap-2 mb-4">
-                        <button class="btn btn-outline-dark px-3 py-2 fw-semibold">S</button>
-                        <button class="btn btn-outline-dark px-3 py-2 fw-semibold active">M</button>
-                        <button class="btn btn-outline-dark px-3 py-2 fw-semibold">L</button>
-                        <button class="btn btn-outline-dark px-3 py-2 fw-semibold">XL</button>
-                    </div>
-
-                    <!-- Quantity & Add to Cart -->
-                    <div class="row g-2 align-items-center mb-4">
-                        <div class="col-4 col-md-3">
-                            <label class="form-label small fw-bold mb-1">Quantity</label>
-                            <select class="form-select border-dark">
-                                <option value="1" selected>1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                            </select>
-                        </div>
-                        <div class="col-8 col-md-9 pt-4">
-                            <button class="btn btn-dark w-100 py-2.5 text-uppercase fw-bold letter-spacing">
-                                Add to Cart
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- Description Text -->
-                    <p class="small text-secondary mb-0">
-                        Elegant printed kurta trouser set crafted from soft viscose fabric. Perfect for women seeking comfort and style in traditional daily wear.
-                    </p>
+        <img src="https://zellbury.com/cdn/shop/files/shawls_shawls_10122026_desktop.jpg?v=1791801319&amp;width=1920"
+             alt="Zellbury Banner"
+             class="hero-image">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content px-4 px-md-5">
+            <div class="row">
+                <div class="col-12 col-md-8 col-lg-6">
+                    <span class="badge bg-dark bg-opacity-50 border border-secondary text-white py-2 px-3 rounded-1 mb-3 text-uppercase fw-normal small">
+                        •Get It Before It's Gone
+                    </span>
+                    <h1 class="fs-2 fw-bold text-white mb-3">Your Winter Prints Await</h1>
+                    <p class="lead fs-6 text-light mb-4">Find your favourite winter prints before they're gone.</p>
+                    <a href="#" class="btn btn-warning text-dark fw-bold px-4 py-2 rounded-pill">
+                        SHOP WINTER UNSTITCHED <i class="bi bi-arrow-right ms-1"></i>
+                    </a>
                 </div>
             </div>
         </div>
-    </main>
+    </div>
+
+    <section class="top-collections-section py-5 bg-white text-center">
+        <div class="container d-flex flex-column align-items-center">
+            <h2 class="section-heading text-dark fw-bold mb-2">
+            Top 10 Collections Nationwide
+            </h2>
+            <div class="mx-auto border-bottom border-3 rounded" style="width: 60px; border-color: #b5be68 !important;"></div>
+        </div>
+    </section>
+
+    <section class="pb-5 bg-white">
+        <div class="container px-3 px-md-4">
+            <div class="row g-3 g-md-4">
+                <div class="col-6 col-md-3">
+                    <a href="product.html" class="collection-card text-decoration-none d-block">
+                        <span class="number-badge"># 01</span>
+                        <div class="card-image-wrapper">
+                            <img src="https://zellbury.com/cdn/shop/files/WPWQ121135_-_6.png?v=1792590385&amp;width=800" alt="Winter Pret Kurta Trouser" class="card-img">
+                            <span class="status-badge badge-red">JUST DROPPED</span>
+                            <div class="card-bottom-bar">
+                                <span class="card-title-text">KURTA TROUSER</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="#" class="collection-card text-decoration-none d-block">
+                        <span class="number-badge"># 02</span>
+                        <div class="card-image-wrapper">
+                            <img src="https://zellbury.com/cdn/shop/files/WPW2532704_4.jpg?v=1764154209&amp;width=800" alt="Winter Pret 3pcs" class="card-img">
+                            <span class="status-badge badge-red">LIMITED FINDS</span>
+                            <div class="card-bottom-bar">
+                                <span class="card-title-text">3 PC</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="#" class="collection-card text-decoration-none d-block">
+                        <span class="number-badge"># 03</span>
+                        <div class="card-image-wrapper">
+                            <img src="https://zellbury.com/cdn/shop/files/WPW2512815_5.jpg?v=1766152738&amp;width=800" alt="Winter Pret Kurta" class="card-img">
+                            <span class="status-badge badge-red">GOING FAST</span>
+                            <div class="card-bottom-bar">
+                                <span class="card-title-text">KURTA</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="#" class="collection-card text-decoration-none d-block">
+                        <span class="number-badge"># 04</span>
+                        <div class="card-image-wrapper">
+                            <img src="https://zellbury.com/cdn/shop/files/WULC26E34220_1.png?v=1788164553&amp;width=800" alt="Designer Collection" class="card-img">
+                            <span class="status-badge badge-red">SELLING FAST</span>
+                            <div class="card-bottom-bar">
+                                <span class="card-title-text">LUXURY</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-5 pb-3 bg-white text-center">
+        <div class="container">
+            <h2 class="fw-bold text-dark display-6 mb-1">Women</h2>
+            <p class="text-muted small mb-0">The Season Won't Wait. Neither Should You.</p>
+        </div>
+    </section>
+
+    <!-- PRODUCT LISTING: 8 cards (name, price, Add to Cart) -->
+    <section class="pb-5 bg-white">
+        <div class="container px-3 px-md-4">
+            <div class="row g-3 g-md-4">
+
+                <div class="col-6 col-md-3">
+                    <div class="collection-card d-flex flex-column h-100">
+                        <div class="card-image-wrapper">
+                            <img src="https://zellbury.com/cdn/shop/files/WPWQ121135_-_6.png?v=1792590385&amp;width=800" alt="Kurta Trouser 1135" class="card-img">
+                            <span class="status-badge badge-red" style="bottom: 10px;">JUST DROPPED</span>
+                        </div>
+                        <div class="pt-2 d-flex flex-column flex-grow-1">
+                            <h3 class="h6 fw-bold text-dark mb-1">Kurta Trouser - 1135</h3>
+                            <p class="fw-bold text-dark mb-2">Rs.3,390</p>
+                            <button class="btn btn-dark w-100 mt-auto text-uppercase fw-bold">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="collection-card d-flex flex-column h-100">
+                        <div class="card-image-wrapper">
+                            <img src="//zellbury.com/cdn/shop/files/WPWQ131380_-_6.png?v=1792590385&amp;width=800" alt="Winter Pret 3 Piece" class="card-img">
+                        </div>
+                        <div class="pt-2 d-flex flex-column flex-grow-1">
+                            <h3 class="h6 fw-bold text-dark mb-1">Winter Pret - 3 Piece</h3>
+                            <p class="fw-bold text-dark mb-2">Rs.4,990</p>
+                            <button class="btn btn-dark w-100 mt-auto text-uppercase fw-bold">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="collection-card d-flex flex-column h-100">
+                        <div class="card-image-wrapper">
+                            <img src="//zellbury.com/cdn/shop/files/WPW2512818_5.jpg?v=1770189144&amp;width=800" alt="Winter Pret Kurta" class="card-img">
+                        </div>
+                        <div class="pt-2 d-flex flex-column flex-grow-1">
+                            <h3 class="h6 fw-bold text-dark mb-1">Winter Pret Kurta</h3>
+                            <p class="fw-bold text-dark mb-2">Rs.2,790</p>
+                            <button class="btn btn-dark w-100 mt-auto text-uppercase fw-bold">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="collection-card d-flex flex-column h-100">
+                        <div class="card-image-wrapper">
+                            <img src="//zellbury.com/cdn/shop/files/WULC26E34227_4.jpg?v=1777551570&amp;width=800" alt="Luxury Collection" class="card-img">
+                        </div>
+                        <div class="pt-2 d-flex flex-column flex-grow-1">
+                            <h3 class="h6 fw-bold text-dark mb-1">Luxury Collection</h3>
+                            <p class="fw-bold text-dark mb-2">Rs.7,490</p>
+                            <button class="btn btn-dark w-100 mt-auto text-uppercase fw-bold">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer class="zellbury-footer-section bg-black text-white py-5">
         <div class="container text-center">
             <ul class="list-inline mb-4 d-flex flex-wrap justify-content-center gap-3 gap-md-4">
-                <li class="list-inline-item m-0"><a href="#" class="footer-link">Exchange & Returns</a></li>
-                <li class="list-inline-item m-0"><a href="#" class="footer-link">FAQ's</a></li>
-                <li class="list-inline-item m-0"><a href="#" class="footer-link">Terms and condition</a></li>
-                <li class="list-inline-item m-0"><a href="#" class="footer-link">Privacy policy</a></li>
+            <li class="list-inline-item m-0"><a href="#" class="footer-link text-white">Exchange &amp; Returns</a></li>
+            <li class="list-inline-item m-0"><a href="#" class="footer-link text-white">FAQ's</a></li>
+            <li class="list-inline-item m-0"><a href="#" class="footer-link text-white">Terms and condition</a></li>
+            <li class="list-inline-item m-0"><a href="#" class="footer-link text-white">Privacy policy</a></li>
             </ul>
             <p class="footer-copyright mb-0">&copy; 2026 ZELLBURY</p>
         </div>
     </footer>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
