@@ -305,7 +305,6 @@ body.bg-white .zellbury-header{
   text-decoration: none;
 }
 
-/* BP = 600 + 23 = 623px */
 @media (min-width: 623px){
   .mega-list{ display: flex; }
   .mobile-accordion{ display: none; }
