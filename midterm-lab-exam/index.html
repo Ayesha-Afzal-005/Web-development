@@ -11,24 +11,83 @@
 <body>
     <div class="hero-container">
     <!-- NAVBAR-->
-        <nav class="navbar zellbury-header d-flex align-items-center justify-content-between">
-            <div class="d-flex align-items-center">
-                <button class="btn p-0 border-0 text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-label="Toggle navigation">
-                    <i class="bi bi-list toggler-icon-custom"></i>
-                </button>
-            </div>
-            <a href="#" class="zellbury-logo navbar-brand">
-            ZELLBURY
+    <nav class="navbar zellbury-header d-flex align-items-center justify-content-between" aria-label="Main">
+        <div class="nav-side d-flex align-items-center gap-3">
+            <button class="btn p-0 border-0 text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-label="Toggle navigation">
+                <i class="bi bi-list toggler-icon-custom"></i>
+            </button>
+            <!-- TASK 1: desktop mega-menu (BP and wider) -->
+            <ul class="mega-list">
+                <li class="mega-item">
+                    <button class="mega-trigger" type="button" aria-haspopup="true">
+                        Shop by Category <i class="bi bi-chevron-down"></i>
+                    </button>
+                    <div class="mega-panel">
+                        <div class="mega-panel-inner">
+                            <div class="mega-col">
+                                <h3 class="mega-heading">Unstitched</h3>
+                                <ul>
+                                    <li><a href="#">Winter Prints</a></li>
+                                    <li><a href="#">Lawn</a></li>
+                                    <li><a href="#">Embroidered</a></li>
+                                    <li><a href="#">Shawls</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-col">
+                                <h3 class="mega-heading">Ready to Wear</h3>
+                                <ul>
+                                    <li><a href="#">Kurta Trouser</a></li>
+                                    <li><a href="#">3 Piece</a></li>
+                                    <li><a href="#">Kurta</a></li>
+                                    <li><a href="#">Luxury</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-col">
+                                <h3 class="mega-heading">Western</h3>
+                                <ul>
+                                    <li><a href="#">Tops</a></li>
+                                    <li><a href="#">Jeans</a></li>
+                                    <li><a href="#">Co-ords</a></li>
+                                    <li><a href="#">Jackets</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-col">
+                                <h3 class="mega-heading">Men</h3>
+                                <ul>
+                                    <li><a href="#">Kurta</a></li>
+                                    <li><a href="#">Shalwar Kameez</a></li>
+                                    <li><a href="#">Waistcoats</a></li>
+                                    <li><a href="#">Shawls</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-col">
+                                <h3 class="mega-heading">Offers</h3>
+                                <ul>
+                                    <li><a href="#">New Arrivals</a></li>
+                                    <li><a href="#">Best Sellers</a></li>
+                                    <li><a href="#">Sale</a></li>
+                                    <li><a href="#">Gift Cards</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <a href="#" class="zellbury-logo navbar-brand">
+        ZELLBURY
+        </a>
+
+        <div class="nav-side d-flex align-items-center justify-content-end gap-3 gap-md-4 text-white">
+            <a href="#" class="text-white text-decoration-none fs-5"><i class="bi bi-search"></i></a>
+            <a href="#" class="text-white text-decoration-none fs-5"><i class="bi bi-person"></i></a>
+            <a href="#" class="text-white text-decoration-none fs-5 position-relative">
+            <i class="bi bi-bag"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-white text-dark" style="font-size: 0.55rem;">0</span>
             </a>
-            <div class="d-flex align-items-center gap-3 gap-md-4 text-white">
-                <a href="#" class="text-white text-decoration-none fs-5"><i class="bi bi-search"></i></a>
-                <a href="#" class="text-white text-decoration-none fs-5"><i class="bi bi-person"></i></a>
-                <a href="#" class="text-white text-decoration-none fs-5 position-relative">
-                <i class="bi bi-bag"></i>
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-white text-dark" style="font-size: 0.55rem;">0</span>
-                </a>
-            </div>
-        </nav>
+        </div>
+    </nav>
         <!-- Content on jsut front landing page -->
         <img src="https://zellbury.com/cdn/shop/files/shawls_shawls_10122026_desktop.jpg?v=1791801319&amp;width=1920"
              alt="Zellbury Banner"
@@ -50,19 +109,66 @@
             </div>
         </div>
         <!-- menu item display -->
-        <div class="offcanvas offcanvas-start bg-black text-white" tabindex="-1" id="mobileMenu">
-            <div class="offcanvas-header border-bottom border-secondary">
-                <h5 class="offcanvas-title zellbury-logo fs-5">ZELLBURY</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <ul class="nav flex-column gap-3 fs-5">
-                    <li class="nav-item"><a class="nav-link text-white" href="#">NEW ARRIVALS</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#">UNSTITCHED</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#">READY TO WEAR</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#">WESTERN</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#">MEN</a></li>
-                </ul>
+         <div class="offcanvas-body">
+                <nav aria-label="Mobile menu">
+                    <!-- TASK 1: accordion below BP -->
+                    <div class="mobile-accordion mb-4">
+                        <h3 class="h6 text-uppercase text-secondary mb-2">Shop by Category</h3>
+                        <details class="mobile-group">
+                            <summary>Unstitched</summary>
+                            <ul>
+                                <li><a href="#">Winter Prints</a></li>
+                                <li><a href="#">Lawn</a></li>
+                                <li><a href="#">Embroidered</a></li>
+                                <li><a href="#">Shawls</a></li>
+                            </ul>
+                        </details>
+                        <details class="mobile-group">
+                            <summary>Ready to Wear</summary>
+                            <ul>
+                                <li><a href="#">Kurta Trouser</a></li>
+                                <li><a href="#">3 Piece</a></li>
+                                <li><a href="#">Kurta</a></li>
+                                <li><a href="#">Luxury</a></li>
+                            </ul>
+                        </details>
+                        <details class="mobile-group">
+                            <summary>Western</summary>
+                            <ul>
+                                <li><a href="#">Tops</a></li>
+                                <li><a href="#">Jeans</a></li>
+                                <li><a href="#">Co-ords</a></li>
+                                <li><a href="#">Jackets</a></li>
+                            </ul>
+                        </details>
+                        <details class="mobile-group">
+                            <summary>Men</summary>
+                            <ul>
+                                <li><a href="#">Kurta</a></li>
+                                <li><a href="#">Shalwar Kameez</a></li>
+                                <li><a href="#">Waistcoats</a></li>
+                                <li><a href="#">Shawls</a></li>
+                            </ul>
+                        </details>
+                        <details class="mobile-group">
+                            <summary>Offers</summary>
+                            <ul>
+                                <li><a href="#">New Arrivals</a></li>
+                                <li><a href="#">Best Sellers</a></li>
+                                <li><a href="#">Sale</a></li>
+                                <li><a href="#">Gift Cards</a></li>
+                            </ul>
+                        </details>
+                    </div>
+
+                    <ul class="nav flex-column gap-3 fs-5">
+                        <li class="nav-item"><a class="nav-link text-white" href="#">NEW ARRIVALS</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#">UNSTITCHED</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#">READY TO WEAR</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#">WESTERN</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#">MEN</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </div>

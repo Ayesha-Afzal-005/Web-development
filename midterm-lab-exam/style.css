@@ -19,7 +19,6 @@ body{
   justify-content: flex-end;
   padding-bottom: 50px;
   padding-top: 130px;
-  overflow: hidden;
 }
 .hero-image{
   position: absolute;
@@ -195,4 +194,119 @@ body.bg-white .zellbury-header{
     flex: 0 0 100%;
     max-width: 100%;
   }
+}
+.zellbury-header .nav-side{
+  flex: 1 1 0;
+  align-self: stretch;
+}
+.mega-list,
+.mega-col ul,
+.mobile-group ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.mega-list{
+  display: none;               
+}
+.mega-item{
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+}
+.mega-trigger{
+  background: none;
+  border: 0;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 0 0.5rem;
+  height: 100%;
+  cursor: pointer;
+}
+.mega-trigger:focus-visible{
+  outline: 2px solid hsl(161, 70%, 45%);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+/* the panel: absolute, so it never pushes content down */
+.mega-panel{
+  position: absolute;
+  top: calc(100% - 12px);      /* overlaps navbar bottom so the pointer never leaves */
+  left: 0;
+  width: 100%;
+  padding-top: 12px;
+  z-index: 1100;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.2s ease, visibility 0.2s;
+}
+.mega-item:hover .mega-panel,
+.mega-item:focus-within .mega-panel{
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.mega-panel-inner{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);   /* K = 5 */
+  gap: 1.25rem;
+  background: #fff;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+}
+.mega-heading{
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #111;
+  padding-bottom: 6px;
+  margin-bottom: 8px;
+  border-bottom: 2px solid hsl(161, 70%, 45%);
+}
+.mega-col li{
+  margin-bottom: 6px;
+}
+.mega-col a{
+  color: #444;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+.mega-col a:hover,
+.mega-col a:focus-visible{
+  color: hsl(161, 70%, 45%);
+  text-decoration: underline;
+}
+
+/* accordion inside the hamburger menu */
+.mobile-group{
+  border-bottom: 1px solid #333;
+}
+.mobile-group summary{
+  cursor: pointer;
+  padding: 10px 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.mobile-group ul{
+  padding: 0 0 10px 12px;
+}
+.mobile-group li{
+  margin-bottom: 6px;
+}
+.mobile-group a{
+  color: #ccc;
+  text-decoration: none;
+}
+
+/* BP = 600 + 23 = 623px */
+@media (min-width: 623px){
+  .mega-list{ display: flex; }
+  .mobile-accordion{ display: none; }
 }
